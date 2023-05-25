@@ -1,10 +1,12 @@
-# Lab Report 3
 ### Researching Commands
-Out of the commands less, find, and grep, I chose to research about the command *find*.
-### Command-line options:
-## 1. **-type**
-Source: Found in the explanation on the website ChatGPT.
-### Command: 
+Out of the commands less, find, and grep, I chose to research about the command 'find'.
+
+### Command-line option 1:
+```
+-type
+```
+Source: <https://linuxize.com/post/linux-type-command/>
+### Command Example: 
 ```
 find ./technical -type d
 ```
@@ -24,7 +26,7 @@ This command is useful for finding all the directories inside the
 ./technical/government/Post_Rate_Comm
 ./technical/plos
 ```
-### Command:
+### Command Example:
 ```
 find ./technical -type l
 ```
@@ -35,9 +37,12 @@ This command would be useful for finding all the symbolic links inside the
 ```
 
 ```
-## 2. **-name**
+### Command-line option 2:
+```
+-name
+```
 Source: <https://www.geeksforgeeks.org/find-command-in-linux-with-examples/#>
-### Command:
+### Command Example:
 ```
 find ./technical -name "*.txt"
 ```
@@ -54,7 +59,7 @@ This command would be useful for finding all the files with ".txt" in the ./tech
 ./technical/biomed/1471-2474-2-3.txt
 ... etc.
 ```
-### Command:
+### Command Example:
 ```
 find ./technical -name "journal*"
 ```
@@ -70,9 +75,12 @@ This command would be useful for finding all the files in the
 ./technical/plos/journal.pbio.0020028.txt
 ... etc.
 ```
-## 3. **-mtime**
+### Command-line option 3:
+```
+-mtime
+```
 Source: <https://www.hostinger.com/tutorials/linux-find-command>
-### Command:
+### Command Example:
 ```
 find ./technical -mtime -3
 ```
@@ -88,7 +96,7 @@ This command is useful for finding all the files in the
 ./technical/biomed/1471-2474-2-1.txt
 ... etc.
 ```
-### Command:
+### Command Example:
 ```
 find ./technical -mtime +5
 ```
@@ -105,9 +113,12 @@ modified more than 5 days ago.
 ./technical/biomed/1471-2474-2-1.txt
 ... etc.
 ```
-## 4. **-samefile**
+### Command-line option 4:
+```
+-samefile
+```
 Source: <https://www.computerhope.com/unix/ufind.htm>
-### Command:
+### Command Example:
 ```
 find ./technical -samefile ./technical/plos/pmed.0020281.txt
 ```
@@ -116,7 +127,7 @@ This command is useful for finding files with the same name as what was inputted
 ```
 ./technical/plos/pmed.0020281.txt
 ```
-### Command:
+### Command Example:
 ```
 find ./technical -samefile ./technical/government/En
 v_Prot_Agen/bill.txt
